@@ -93,7 +93,7 @@ Default:
   unitPrecision: 5,
   viewportUnit: 'vw',
   fontViewportUnit: 'vw',  // vmin is more suitable.
-  selectorBlackList: [],
+  filePathBlackList: [],
   minPixelValue: 1,
   mediaQuery: false
 }

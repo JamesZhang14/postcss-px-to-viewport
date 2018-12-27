@@ -15,6 +15,33 @@ npm install postcss-px-to-viewport-nl -S
 
 If your project involves a fixed width, this script will help to convert pixels into viewport units.
 
+## Nuxt Postcss Config 
+
+```
+build: {
+    /*
+    ** You can extend webpack config here
+    */
+    extend(config, ctx) {
+    },
+    postcss: {
+      plugins: {
+        'postcss-px-to-viewport-nl': {
+          unitToConvert: 'px',
+          viewportWidth: 375,
+          // viewportHeight: 568, // not now used; TODO: need for different units and math for different properties
+          unitPrecision: 5,
+          viewportUnit: 'vw',
+          fontViewportUnit: 'vw',  // vmin is more suitable.
+          filePathBlackList: ['index/sections', 'pages/index.vue'],
+          minPixelValue: 1,
+          mediaQuery: false
+        }
+      }
+    }
+
+```
+
 ### Input/Output
 
 ```css

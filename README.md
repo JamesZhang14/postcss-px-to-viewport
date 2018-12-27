@@ -104,11 +104,10 @@ Default:
 - `unitPrecision` (Number) The decimal numbers to allow the REM units to grow to.
 - `viewportUnit` (String) Expected units.
 - `fontViewportUnit` (String) Expected units for font.
-- `selectorBlackList` (Array) The selectors to ignore and leave as px.
-    - If value is string, it checks to see if selector contains the string.
-        - `['body']` will match `.body-class`
-    - If value is regexp, it checks to see if the selector matches the regexp.
-        - `[/^body$/]` will match `body` but not `.body`
+- `filePathBlackList` (Array) The selectors to ignore and leave as px.
+    - ['/home/', '/contact-us/'] 
+        - `[/home/` will match every file which filepath contains '/home/', like `'/your-repository/project/src/home/index.vue'` or `'/your-repository/project/src/home/index.scss'`
+   
 - `minPixelValue` (Number) Set the minimum pixel value to replace.
 - `mediaQuery` (Boolean) Allow px to be converted in media queries.
 

@@ -19,11 +19,6 @@ If your project involves a fixed width, this script will help to convert pixels 
 
 ```
 build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    },
     postcss: {
       plugins: {
         'postcss-px-to-viewport-nl': {
@@ -39,6 +34,7 @@ build: {
         }
       }
     }
+}
 
 ```
 

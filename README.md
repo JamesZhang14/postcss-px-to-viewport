@@ -4,6 +4,13 @@
 
 A plugin for [PostCSS](https://github.com/ai/postcss) that generates viewport units (vw, vh, vmin, vmax) from pixel units.
 
+### Installation
+
+##### Via NPM
+```
+npm install postcss-px-to-viewport-nl -S
+```
+
 ## Usage
 
 If your project involves a fixed width, this script will help to convert pixels into viewport units.

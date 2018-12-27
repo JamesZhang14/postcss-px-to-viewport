@@ -4,3 +4,4 @@ logs
 npm-debug.log*
 node_modules
 postcss-px-to-em-master
+.idea

@@ -15,7 +15,7 @@ npm install postcss-px-to-viewport-nl -S
 
 If your project involves a fixed width, this script will help to convert pixels into viewport units.
 
-## Nuxt Postcss Config 
+## Use in Nuxt.js
 
 ```
 build: {
